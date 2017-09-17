@@ -4,6 +4,7 @@ import '../styles/App.css';
 
 import NavBar from './NavBar.js';
 import PlayListForm from './PlayListForm.js';
+import PlayList from './PlayList.js';
 
 class App extends Component {
   // constructor(props) {
@@ -21,6 +22,7 @@ class App extends Component {
         <div>
           <NavBar />
           <PlayListForm />
+          <PlayList />
         </div>
       </div>
     );
