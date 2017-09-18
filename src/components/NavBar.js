@@ -5,9 +5,10 @@ import React, { Component } from 'react';
 export default class NavBar extends Component {
   render() {
     return (
-      <header>
+      <header className="App-header">
         {/* <img src={logo} alt=""/> */}
-        <h1>Playlist Builder</h1>
+        {/* <i class="fa fa-soundcloud" aria-hidden="true"></i> */}
+        <h1>&#9835; SoundShare</h1>
       </header>
     )
   }

@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
+  background-color: #222;
+  font-family: 'Open Sans', sans-serif;
+  /*display: flex;*/
+  /*flex-direction: row;*/
 }
 
 .App-logo {
@@ -8,10 +12,12 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-image: url("http://www.planwallpaper.com/static/images/5ynt7Gb.jpg");
   height: 150px;
-  padding: 20px;
+  /*flex-flow: 1;*/
+  padding: 50px;
   color: white;
+  text-align: center;
 }
 
 .App-intro {
@@ -21,4 +27,53 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.form-group {
+  width: 40%;
+  padding: 10px 10px 0px 10px;
+  /*border-right: 1px solid black;*/
+  /*background-color: gray;*/
+  margin: 5px;
+}
+
+.form-group div {
+  border: 0;
+  width: 90%;
+}
+
+.form-text {
+  color: #70E4FA;
+}
+
+.card {
+  background-color: #222;
+  width: 60%;
+}
+
+.card-block {
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  border-left: 10px solid #9F03E4;
+  margin: 10px;
+}
+
+.card-title {
+  color: white;
+  margin: 0 10px;
+  /*padding-top: 10px;*/
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #41474C;
+  /*padding: 0;*/
+  margin: 0;
+}
+
+.btn-secondary {
+  background-color: #222;
+  color: #70E4FA;
+  border: 1px solid #70E4FA;
 }

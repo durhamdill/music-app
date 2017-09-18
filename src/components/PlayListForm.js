@@ -47,17 +47,28 @@ export default class PlayListForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-group">
+        <label className="card-title">SHARE YOUR SONG</label>
         <form onSubmit={this.addToList}>
-          <label htmlFor="userName">User Name:</label>
-          <input onChange={this.updateItem} type="text" className="form-control" id="userName" placeholder="Name or Username" value={this.state.userName}/>
-          <label htmlFor="songArtist">Artist/Band:</label>
-          <input onChange={this.updateItem} type="text" className="form-control" id="songArtist" placeholder="Artist or Band Name" value={this.state.songArtist}/>
-          <label htmlFor="songTitle">Song Title:</label>
-          <input onChange={this.updateItem} type="text" className="form-control" id="songTitle" placeholder="Song Title" value={this.state.songTitle}/>
-          <label htmlFor="songNotes">Notes about Song:</label>
-          <textarea onChange={this.updateItem} type="text" className="form-control" id="songNotes" value={this.state.songNotes}/>
-          <input className="btn btn-primary btn-lg" type="submit" value="Submit"/>
+          <div className="form-group">
+            <label className="form-text" htmlFor="userName">User Name:</label>
+            <input onChange={this.updateItem} type="text" className="form-control" id="userName" placeholder="Name or Username" value={this.state.userName}/>
+          </div>
+          <div className="form-group">
+            <label className="form-text" htmlFor="songArtist">Artist/Band:</label>
+            <input onChange={this.updateItem} type="text" className="form-control" id="songArtist" placeholder="Artist or Band Name" value={this.state.songArtist}/>
+          </div>
+          <div className="form-group">
+            <label className="form-text" htmlFor="songTitle">Song Title:</label>
+            <input onChange={this.updateItem} type="text" className="form-control" id="songTitle" placeholder="Song Title" value={this.state.songTitle}/>
+          </div>
+          <div className="form-group">
+            <label className="form-text" htmlFor="songNotes">Notes about Song:</label>
+            <textarea onChange={this.updateItem} type="text" className="form-control" id="songNotes" value={this.state.songNotes}/>
+          </div>
+          <div className="form-group">
+            <input className="btn btn-secondary" type="submit" value="Submit"/>
+          </div>
         </form>
       </div>
     )

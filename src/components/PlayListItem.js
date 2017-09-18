@@ -7,11 +7,11 @@ export default class PlayListItem extends Component {
     return(
       <div>
         {this.props.songList.map((song) =>
-            <div key={song._id}>
-              <h4>User: {song.userName}</h4>
-              <h4>Artist/Band: {song.songArtist}</h4>
-              <h4>Title: {song.songTitle}</h4>
-              <h4>Notes: {song.songNotes}</h4>
+            <div className="card-block" key={song._id}>
+              <p className="card-text">User: {song.userName}</p>
+              <p className="card-text">Artist/Band: {song.songArtist}</p>
+              <p className="card-text">Title: {song.songTitle}</p>
+              <p className="card-text">Notes: {song.songNotes}</p>
             </div>
           )}
       </div>

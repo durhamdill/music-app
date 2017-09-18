@@ -30,9 +30,12 @@ fetchData = (e) => {
 
   render(){
     return(
-      <div className = "songlist">
-          <input onClick={this.fetchData} className="btn btn-primary btn-lg" type="submit" value="Update"/>
-        <PlayListItem songList={this.state.songs}/>
+      <div>
+        <label className="card-title">SHARED SONG LIST</label>
+        <input onClick={this.fetchData} className="btn btn-secondary" type="submit" value="Update"/>
+        <div className = "card">
+          <PlayListItem songList={this.state.songs}/>
+        </div>
       </div>
     )
   }
